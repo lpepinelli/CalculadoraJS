@@ -1,0 +1,93 @@
+﻿
+<div class="row">
+    <div class="col-sm-3 mb-1">
+        <input type="text" id="Valor1"/>
+    </div>
+    <div class="col-sm-9">
+        <input type="radio" name="oper" id="+"> +
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-1 offset-3 mb-2">
+        <input type="radio" name="oper" id="-"> -
+    </div>
+    <div class="col-sm-1 mr-3">
+        <input id="btnCalc"
+               type="button"
+               value="Calcular" />
+    </div>
+    <div class="col-sm-2 mr-4">
+        <input type="text" id="Resultado" disabled="disabled" />
+    </div>
+    <div class="col-sm-1">
+        <input id="btnLimp"
+               type="button"
+               value="Limpar" />
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-3 mb-1">
+        <input type="text" id="Valor2" />
+    </div>
+    <div class="col-sm-9">
+        <input type="radio" name="oper" id="/"> /
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-1 offset-3 mb-2">
+        <input type="radio" name="oper" id="*"> *
+    </div>
+</div>
+
+
+
+
+@section Scripts {
+
+    <script>
+
+
+    function btnCliqueAquiOnClick() {
+
+        let x = parseFloat(document.getElementById("Valor1").value);
+        let y = parseFloat(document.getElementById("Valor2").value);
+
+        if (isNaN(x)) {
+            alert("Primeiro Valor é invalido");
+        }
+        else if (isNaN(y)) {
+            alert("Segundo Valor é invalido");
+        }
+        else {
+            if (document.getElementById("+").checked) {
+                document.getElementById("Resultado").value = x + y;
+            }
+            else if (document.getElementById("-").checked) {
+                document.getElementById("Resultado").value = x - y;
+            }
+            else if (document.getElementById("/").checked) {
+                document.getElementById("Resultado").value = x / y;
+            }
+            else if (document.getElementById("*").checked) {
+                document.getElementById("Resultado").value = x * y;
+            }
+            else {
+                alert("Selecione uma operação.");
+            }
+        }
+    }
+
+
+        function btnLimparOnClick() {
+            document.getElementById("Valor1").value = "";
+            document.getElementById("Valor2").value = "";
+            document.getElementById("Resultado").value = "";
+        }
+
+    document.getElementById("btnCalc")
+            .onclick = btnCliqueAquiOnClick;
+    document.getElementById("btnLimp")
+        .onclick = btnLimparOnClick;
+
+    </script>
+}

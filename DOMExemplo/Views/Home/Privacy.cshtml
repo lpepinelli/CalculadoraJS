@@ -1,0 +1,115 @@
+﻿<style>
+    .button {
+        width: 3.125rem;
+        height: 3.125rem;
+    }
+
+    .divisor {
+        width: 14rem;
+        margin-left: 0.25rem;
+    }
+
+    .linha {
+        height: 0.625rem;
+    }
+
+    .cinza {
+        color: darkgray;
+    }
+</style>
+<div class="divisor">
+    <h5 class="text-right cinza">1232</h5>
+</div>
+<div class="divisor">
+    <hr>
+    <h2 class="text-right" id="texto1">1232</h2>
+    <hr>
+</div>
+<div class="row ml-0">
+    <div class="m-1">
+        <input type="button" class="btn btn-outline-dark button" value="CE" />
+    </div>
+    <div class="m-1">
+        <input type="button" class="btn btn-outline-dark button" value="C" />
+    </div>
+    <div class="m-1">
+        <input type="button" class="btn btn-outline-dark button" value="<" />
+    </div>
+    <div class="m-1">
+        <input type="button" class="btn btn-outline-dark button" value="/" />
+    </div>
+</div>
+<div class="row ml-0">
+    <div class="m-1">
+        <input type="button" class="btn btn-outline-dark button" value="7" />
+    </div>
+    <div class="m-1">
+        <input type="button" class="btn btn-outline-dark button" value="8" />
+    </div>
+    <div class="m-1">
+        <input type="button" class="btn btn-outline-dark button" value="9" />
+    </div>
+    <div class="m-1">
+        <input type="button" class="btn btn-outline-dark button" value="*" />
+    </div>
+</div>
+<div class="row ml-0">
+    <div class="m-1">
+        <input type="button" class="btn btn-outline-dark button" value="4" />
+    </div>
+    <div class="m-1">
+        <input type="button" class="btn btn-outline-dark button" value="5" />
+    </div>
+    <div class="m-1">
+        <input type="button" class="btn btn-outline-dark button" value="6" />
+    </div>
+    <div class="m-1">
+        <input type="button" class="btn btn-outline-dark button" value="-" />
+    </div>
+</div>
+<div class="row ml-0">
+    <div class="m-1">
+        <input type="button" id="numero" class="btn btn-outline-dark button" value="1" />
+    </div>
+    <div class="m-1">
+        <input type="button" class="btn btn-outline-dark button" value="2" />
+    </div>
+    <div class="m-1">
+        <input type="button" class="btn btn-outline-dark button" value="3" />
+    </div>
+    <div class="m-1">
+        <input type="button" class="btn btn-outline-dark button" value="+" />
+    </div>
+</div>
+<div class="row ml-0">
+    <div class="m-1">
+        <input type="button" class="btn btn-outline-dark button" value="" />
+    </div>
+    <div class="m-1">
+        <input type="button" class="btn btn-outline-dark button" value="0" />
+    </div>
+    <div class="m-1">
+        <input type="button" class="btn btn-outline-dark button" value="," />
+    </div>
+    <div class="m-1">
+        <input type="button" class="btn btn-outline-dark button" value="=" />
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        function text1(valor) {
+            document.getElementById("texto1").innerHTML = valor;
+        }
+
+        var btns = document.getElementsByClassName("btn");
+        var valor;
+        for (var i = 0; btns.length; i++) {
+            //btns[i].onclick = text1;
+            valor = btns[i].value;
+            btns[i].addEventListener('click', function () {
+                text1(valor);
+            }, false);
+        }
+    </script>
+}
