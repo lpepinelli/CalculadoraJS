@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\DELL-TI\\source\\repos\\DOMExemplo\\DOMExemplo\\DOMExemplo.csproj": {}
+    "C:\\Users\\DELL-TI\\CalculadoraJS\\DOMExemplo\\DOMExemplo.csproj": {}
   },
   "projects": {
-    "C:\\Users\\DELL-TI\\source\\repos\\DOMExemplo\\DOMExemplo\\DOMExemplo.csproj": {
+    "C:\\Users\\DELL-TI\\CalculadoraJS\\DOMExemplo\\DOMExemplo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\DELL-TI\\source\\repos\\DOMExemplo\\DOMExemplo\\DOMExemplo.csproj",
+        "projectUniqueName": "C:\\Users\\DELL-TI\\CalculadoraJS\\DOMExemplo\\DOMExemplo.csproj",
         "projectName": "DOMExemplo",
-        "projectPath": "C:\\Users\\DELL-TI\\source\\repos\\DOMExemplo\\DOMExemplo\\DOMExemplo.csproj",
+        "projectPath": "C:\\Users\\DELL-TI\\CalculadoraJS\\DOMExemplo\\DOMExemplo.csproj",
         "packagesPath": "C:\\Users\\DELL-TI\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\DELL-TI\\source\\repos\\DOMExemplo\\DOMExemplo\\obj\\",
+        "outputPath": "C:\\Users\\DELL-TI\\CalculadoraJS\\DOMExemplo\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

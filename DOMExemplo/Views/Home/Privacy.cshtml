@@ -105,11 +105,13 @@
         var btns = document.getElementsByClassName("btn");
         var valor;
         for (var i = 0; btns.length; i++) {
-            //btns[i].onclick = text1;
-            valor = btns[i].value;
-            btns[i].addEventListener('click', function () {
-                text1(valor);
-            }, false);
+            btns[i].onclick = function () {
+                text1(this.value);
+            }
+            //valor = btns[i].value;
+            //btns[i].addEventListener('click', function () {
+            //    text1(valor);
+            //}, false);
         }
     </script>
 }
